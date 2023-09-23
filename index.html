@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boris & Gabrielle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- ***************************DESKTOP NAV BAR********************************* -->
+    <nav id="desktop-nav">
+      <div class="logo">Boris & Gabrielle</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#wedding-party">Wedding Party</a></li>
+          <li><a href="#registry">Registry</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ***************************MOBILE NAV BAR********************************* -->
+    <nav id="hamburger-nav">
+      <div class="logo">Boris & Gabrielle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#events" onclick="toggleMenu()">Events</a></li>
+            <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="#wedding-party" onclick="toggleMenu()">Wedding Party</a></li>
+            <li><a href="#registry" onclick="toggleMenu()">Registry</a></li>
+            <li><a href="#rsvp" onclick="toggleMenu()">RSVP</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
