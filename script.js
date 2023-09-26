@@ -50,3 +50,5 @@ function toggleMenu() {
           //seconds
         }, 0)
     }());
+
+// GALLERY
