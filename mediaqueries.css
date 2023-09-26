@@ -19,31 +19,17 @@
     #hamburger-nav {
       display: flex;
     }
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #home,
+    #home, 
     #events,
-    .section-container {
+    #gallery
+    {
       display: block;
     }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
+    section {
       height: fit-content;
     }
     }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
-  }
+
   
   @media screen and (max-width: 100px) {
     
@@ -71,7 +57,6 @@
       font-size: 1.5rem;
     }
    
-    
     .section__text__p2 {
       font-size: 1.25rem;
     }

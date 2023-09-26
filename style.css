@@ -38,7 +38,7 @@ nav {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 12vh;
 }
 
 #desktop-nav {
@@ -200,26 +200,86 @@ a:hover {
 /* EVENTS */
 
 .event-container {
-  padding-top: 10rem;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
 }
 
 .h1-event {
-  display: flex;
-  justify-content: center;
   font-weight: normal;
   letter-spacing: .125rem;
   text-transform: uppercase;
   font-size: 4rem;
+  padding-bottom: 2rem;
 }
 
 .h2-event {
-  display: flex;
-  justify-content: center;
   font-weight: normal;
   letter-spacing: .125rem;
   text-transform: uppercase;
   font-size: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-event {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+.first-event {
+  padding-bottom: 2rem;
+}
+
+.directions-button {
+  padding: 10px 35px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all 80ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px 0px black;
+}
+
+.directions-button:active {
+  translate: 5px 5px;
+  box-shadow: 0px 0px 0px 0px black, 0 0 42px 10px #00000012;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* GALLERY */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.h1-gallery {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-size: 4rem;
   padding-bottom: 2rem;
 }
