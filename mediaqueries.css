@@ -8,7 +8,8 @@
     }
     #events,
     #home,
-    #gallery {
+    #gallery,
+    #wedding-party {
       height: fit-content;
     }
   }
@@ -22,7 +23,8 @@
     }
     #home, 
     #events,
-    #gallery
+    #gallery,
+    #wedding-party
     {
       display: block;
     }
@@ -32,16 +34,17 @@
     }
 
   
-  @media screen and (max-width: 100px) {
+  @media screen and (max-width: 800px) {
     
    
   
     article {
       font-size: 1rem;
     }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
+    #events,
+    #home,
+    #gallery,
+    #wedding-party {
       flex-wrap: wrap;
     }
     .contact-info-container {

@@ -164,7 +164,7 @@ a:hover {
 .main-image {
   width: 100%;
   padding-bottom: 5rem;
-  padding-top: 10rem;
+  padding-top: 6.5rem;
 }
 
 /* COUNTDOWN TIMER */
@@ -365,4 +365,24 @@ a:hover {
   #dots-con{
     display:none;
   }
+  }
+
+  /* WEDDING PARTY */
+  
+  .wedding-party-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  
+  .h1-wedding-party {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-bottom: 2rem;
   }
