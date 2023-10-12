@@ -386,3 +386,29 @@ a:hover {
     font-size: 4rem;
     padding-bottom: 2rem;
   }
+
+  .wedding-party-member {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .wedding-party-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .wedding-party-image {
+    width: 100%;
+    
+  }
+
+  .wedding-party-name {
+    font-size: 1.5rem;
+  }
