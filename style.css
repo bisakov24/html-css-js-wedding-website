@@ -26,11 +26,28 @@ a,
   transition: all 300ms ease;
 }
 
+.spacing {
+  margin-bottom: 13%;
+}
+
+.spacing-gallery {
+  margin-bottom: 19%;
+}
+
+.spacing-registry {
+  margin-bottom: 19%;
+}
+
+.spacing-rsvp {
+  margin-bottom: 33%;
+}
+
 /* DESKTOP NAV */
 
 nav,
 .nav-links {
   display: flex;
+  z-index: 9999;
 }
 
 nav {
@@ -126,7 +143,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 450px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -525,4 +542,44 @@ figure.snip1113.navy img {
 figure.snip1113.navy h3,
 figure.snip1113.navy h4 {
   color: #2b3c4e;
+}
+
+/* REGISTRY */
+
+.registry-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.h1-registry {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+ /* WEDDING PARTY */
+  
+ .rsvp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.h1-rsvp {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding-bottom: 2rem;
 }

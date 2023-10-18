@@ -10,7 +10,8 @@
     #home,
     #gallery,
     #wedding-party,
-    .wedding-party-member {
+    #registry,
+    #rsvp{
       height: fit-content;
     }
   }
@@ -25,7 +26,9 @@
     #home, 
     #events,
     #gallery,
-    #wedding-party
+    #wedding-party,
+    #registry,
+    #rsvp
     {
       display: block;
     }
@@ -46,7 +49,8 @@
     #home,
     #gallery,
     #wedding-party,
-    .wedding-party-member {
+    #registry,
+    #rsvp {
       flex-wrap: wrap;
     }
     .contact-info-container {
