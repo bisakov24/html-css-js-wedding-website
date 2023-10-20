@@ -369,20 +369,6 @@ a:hover {
   .active{
   background:rgb(7, 67, 213);
   }
-  
-  @media (max-width:576px){
-  #slider{width:100%;
-  
-  }
-  
-  .controls{
-    font-size:1em;
-  }
-  
-  #dots-con{
-    display:none;
-  }
-  }
 
   /* WEDDING PARTY */
   
@@ -774,11 +760,6 @@ textarea {
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 18px;
-  }
-  
-  .icon {
-    height: 35px;
-    width: 35px;
   }
   
   .underline {
