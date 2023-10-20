@@ -91,18 +91,12 @@ a:hover {
 
 /* HAMBURGER MENU */
 
-.hamburger-logo {
-  margin-top: 10%;
-  font-size: 1.5rem;
-}
-
 #hamburger-nav {
   display: none;
   position: fixed;
 }
 
 .hamburger-menu {
-  margin-top: 10%;
   position: relative;
   display: inline-block;
 }
