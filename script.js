@@ -94,3 +94,18 @@ function changeSlide(){
 
 
 }
+
+//RSVP
+
+function checkIf2() {
+  if (document.getElementById('subject_input').value == '2') {
+    document.getElementById('extra').style.display = '';
+    document.getElementById('name_input_2').disabled = false;
+  } else {
+    document.getElementById('extra').style.display = 'none';
+}
+}
+
+function clearForm() {
+  
+}

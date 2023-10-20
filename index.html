@@ -20,7 +20,7 @@
           <li><a href="#wedding-party">Wedding Party</a></li>
           <li><a href="#registry">Registry</a></li>
           <li><a href="#rsvp">RSVP</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
     </nav>
@@ -40,7 +40,7 @@
             <li><a href="#wedding-party" onclick="toggleMenu()">Wedding Party</a></li>
             <li><a href="#registry" onclick="toggleMenu()">Registry</a></li>
             <li><a href="#rsvp" onclick="toggleMenu()">RSVP</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#faq" onclick="toggleMenu()">FAQ</a></li>
         </div>
       </div>
     </nav>
@@ -68,17 +68,11 @@
       <div class="first-event">
       <div class="spacing"></div>
         <h1 class="h1-event">Events</h1>
-        <h2 class="h2-event">Ceremony</h2>
-        <p class="p-event">5:30PM - 6:00PM, June 2nd, 2024</p>
+        <h2 class="h2-event">Ceremony & Reception</h2>
+        <p class="p-event">5:30PM - 11:00PM, June 2nd, 2024</p>
         <p class="p-event">Highfields Event Center</p>
         <p class="p-event">1940 Georgetown Rd, Hudson, OH 44236</p>
       </div>
-      <div class="second-event">
-        <h2 class="h2-event">Reception</h2>
-        <p class="p-event">6:00PM - 11:00PM, June 2nd, 2024</p>
-        <p class="p-event">Highfields Event Center</p>
-        <p class="p-event">1940 Georgetown Rd, Hudson, OH 44236</p>
-      </div> 
     </div>
     <div class="button-container">
       <a href="https://maps.app.goo.gl/qRYyqm6D9zExXmqF7" target="_blank"><button class="directions-button">Directions</button></a>
@@ -117,10 +111,6 @@
 
             <div class="slide" style="background:white;">
               <img src="./assets/engagement-6.jpg" >
-            </div>
-        
-            <div class="slide" style="background:white;">
-               <img src="./assets/engagement-7.jpg" >
             </div>
         
             <div class="slide" style="background:white;">
@@ -264,13 +254,68 @@
       <div class="rsvp-container">
         <div class="rsvp-header">
           <div class="spacing-rsvp"></div>
-          <h1 class="h1-rsvp">RSVP</h1>
+          <!-- <h1 class="h1-rsvp">RSVP</h1> -->
         </div>
-        <div>
         
-        </div>
+        <div id="form-container">
+          <h1 class="form-header">&bull; RSVP &bull;</h1>
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScShI7GXcguek0olKIZSCbtHY1888T6SpuQFIS2cTcEKHDd8g/formResponse" id="contact_form">
+            <div class="subject">
+              <label for="subject"></label>
+              <select onchange='checkIf2()' placeholder="Subject line" name="entry.331365419" id="subject_input" required>
+                <option disabled hidden selected value="">Number in Party</option>
+                <option value="1">&nbsp;&nbsp;1</option>
+                <option value="2">&nbsp;&nbsp;2</option>
+              </select>
+            </div>
+            <div class="name">
+              <label for="name"></label>
+              <input type="text" placeholder="Full Name" name="entry.1900470070" id="name_input" required>
+            </div>
+            <div id="extra" name="extra" style="display: none" class="name">
+              <label for="name"></label>
+              <input type="text" placeholder="Full Name" name="entry.599222660" id="name_input_2" required disabled>
+            </div>
+            <div class="subject">
+              <label for="subject"></label>
+              <select placeholder="Subject line" name="entry.385040474" id="subject_input" required>
+                <option disabled hidden selected value="">Attending</option>
+                <option value="YES">&nbsp;&nbsp;YES</option>
+                <option value="NO">&nbsp;&nbsp;NO</option>
+              </select>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit RSVP" id="form_button" />
+            </div>
+          </form><!-- // End form -->
+        </div><!-- // End #container -->
       </div>
     </section>
+    <!-- *******************************FAQ************************************** -->
+    <section id="faq">
+      <div class="faq-container">
+        <div class="spacing"></div>
+        <h1 class="h1-faq">FAQ</h1>
+        <div class="question">
+          <h2 class="h2-faq">What should I wear?</h2>
+          <p class="p-faq">Cocktail attire!</p>
+        </div>
+        <div class="question">
+          <h2 class="h2-faq">Can I bring my kids?</h2>
+          <p class="p-faq">To allow our guests to relax and enjoy themselves, we request that this is an adults-only occasion.</p>
+        </div>
+        <div class="question">
+          <h2 class="h2-faq">Is there parking available at the wedding venue?</h2>
+          <p class="p-faq">Yes! Plenty of parking is available</p>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      </section>
+      <footer>
+        <p>Copyright &#169; 2023 Boris Isakov. All Rights Reserved.</p>
+      </footer>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </body>
 </html>
