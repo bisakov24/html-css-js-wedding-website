@@ -106,6 +106,15 @@ function checkIf2() {
 }
 }
 
-function clearForm() {
-  
+
+
+function hideForm() {
+
+if((document.getElementById('subject_input').value != "" && document.getElementById('name_input').value != "" && document.getElementById('subject_input_2').value != "") ||
+  (document.getElementById('subject_input').value != "" && document.getElementById('name_input').value != "" && document.getElementById('name_input_2').value != "" && document.getElementById('subject_input_2').value != "")){
+  document.getElementById('contact_form').style.display = 'none';
+  document.getElementById('contactFormSubmitted').style.display = 'block';
+
+}
+
 }

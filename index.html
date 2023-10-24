@@ -260,7 +260,12 @@
         <div class="spacing-rsvp"></div>
         <div id="form-container">
           <h1 class="form-header">&bull; RSVP &bull;</h1>
-          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScShI7GXcguek0olKIZSCbtHY1888T6SpuQFIS2cTcEKHDd8g/formResponse" id="contact_form">
+          <div id="contactFormSubmitted" style="display: none">
+            <h2 class="h2-faq">Thank you!</h2>
+            <p class="p-rsvp">Your RSVP was submitted successfully!</p>
+            <br/>
+          </div>
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScShI7GXcguek0olKIZSCbtHY1888T6SpuQFIS2cTcEKHDd8g/formResponse" target="hidden-contact-result" id="contact_form">
             <div class="subject">
               <label for="subject"></label>
               <select onchange='checkIf2()' placeholder="Subject line" name="entry.331365419" id="subject_input" required>
@@ -279,16 +284,17 @@
             </div>
             <div class="subject">
               <label for="subject"></label>
-              <select placeholder="Subject line" name="entry.385040474" id="subject_input" required>
+              <select placeholder="Subject line" name="entry.385040474" id="subject_input_2" required>
                 <option disabled hidden selected value="">Attending</option>
                 <option value="YES">&nbsp;&nbsp;YES</option>
                 <option value="NO">&nbsp;&nbsp;NO</option>
               </select>
             </div>
             <div class="submit">
-              <input type="submit" value="Submit RSVP" id="form_button" />
+              <input onclick="hideForm()" type="submit" value="Submit RSVP" id="form_button" />
             </div>
           </form><!-- // End form -->
+          <iframe id="contactResult" name="hidden-contact-result" style="display: none"></iframe>
         </div><!-- // End #container -->
       </div>
     </section>
