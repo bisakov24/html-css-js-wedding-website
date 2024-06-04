@@ -41,12 +41,12 @@ function toggleMenu() {
             document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
   
           //do something later when date is reached
-          if (distance < 0) {
-            document.getElementById("headline").innerText = "It's Our Wedding Day!";
+          
+            document.getElementById("headline").innerText = "Thank you for celebrating our Wedding Day!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
-          }
+          
           //seconds
         }, 0)
     }());
